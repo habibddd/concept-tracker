@@ -1,0 +1,32 @@
+body {
+	font-family: 'Noto Sans Mono', monospace;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	font-variation-settings: 'wdth' 100;
+	background: #ecccffd3;
+}
+
+button,
+select,
+input,
+textarea {
+	font-family: 'Noto Sans Mono', monospace;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+
+.expandable-content {
+	height: 0;
+	overflow: hidden;
+	opacity: 0;
+	transition: height 0.4s ease-out, opacity 0.3s ease-out 0.05s;
+}
+
+.expandable-content.expanded {
+	height: fit-content; /* temporary test height */
+	opacity: 1;
+}

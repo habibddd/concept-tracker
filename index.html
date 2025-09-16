@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Javascript Concept Tracker</title>
+    <script src="script.js" defer></script>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<header>
+			<h1>JS Concept Tracker</h1>
+			<p>Tracking concepts as I learn them</p>
+		</header>
+		<div class="concept-card">
+			<input
+				class="concept-name"
+				placeholder="What have you learned today?"
+				required
+			/>
+			<div class="expandable-content">
+				<textarea
+					class="description"
+					placeholder="Describe what you learned..."
+					required
+				></textarea>
+				<div class="code-note">
+					<select name="languages" id="languages">
+						<option value="javascript" selected>JavaScript</option>
+						<option value="html">HTML</option>
+						<option value="css">CSS</option>
+					</select>
+					<br />
+
+					<textarea
+						class="code-input"
+						placeholder="Enter your code example"
+					></textarea>
+				</div>
+				<input type="date" class="date-picker" />
+			</div>
+			<button class="action-button">Memorize concept</button>
+		</div>
+	</body>
+</html>
